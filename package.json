@@ -7,8 +7,17 @@
     "dev": "nodemon ./bin/www -e .hbs,.js",
     "seed:artist": "node ./bin/seed/seed.artist.js",
     "seed:style": "node ./bin/seed/seed.style.js",
-    "seed:label": "node ./bin/seed/seed.label.js"
+    "seed:label": "node ./bin/seed/seed.label.js",
+    "setup": "npm install hbs express multer cloudinary mongoose morgan dotenv multer-storage-cloudinary"
   },
   "dependencies": {
+    "cloudinary": "^1.25.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "mongoose": "^5.11.18",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "multer-storage-cloudinary": "^4.0.0"
   }
 }
