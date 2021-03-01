@@ -1,0 +1,20 @@
+<h1>Update artist</h1>
+
+<form method="post" action="/dashboard/artist/{{this._id}}/update" class="form" enctype="multipart/form-data">
+    <label class="labels" for="name">Name</label>
+    <input class="input" type="text" id="name" name="name" value="{{this.name}}">
+
+    <label class="labels" for="isBand">Is it a band ?</label>
+    {{#if this.isBand}}
+    <input class="input" type="checkbox" id="isBand" name="isBand" checked>
+    {{else}}
+    <input class="input" type="checkbox" id="isBand" name="isBand">
+    {{/if}}
+    <label class="labels" for="description">Description</label>
+    <input class="input" type="text" id="description" name="description" value="{{this.description}}">
+
+    <label for="picture">Add an image</label>
+    <input type="file" name="picture" id="picture">
+
+    <button type="submit">Update artist</button>
+</form>

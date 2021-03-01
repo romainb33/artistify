@@ -1,0 +1,26 @@
+<h1>Update label</h1>
+
+<form method="post" action="/dashboard/label/{{this._id}}/update" class="form" enctype="multipart/form-data">
+    <label class="labels" for="name">Name</label>
+    <input class="input" type="text" id="name" name="name" value="{{this.name}}">
+
+    <label class="labels" for="country">country</label>
+    <input class="input" type="text" id="country" name="country" value="{{this.country}}">
+
+    <label class="labels" for="city">city</label>
+    <input class="input" type="text" id="city" name="city" value="{{this.city}}">
+
+    <label class="labels" for="street">street</label>
+    <input class="input" type="text" id="street" name="street" value="{{this.street}}">
+
+    <label class="labels" for="streetNumber">street number</label>
+    <input class="input" type="number" min="0" id="streetNumber" name="streetNumber" value="{{this.streetNumber}}">
+
+    <label class="labels" for="zipcode">zipcode</label>
+    <input class="input" type="number" min="0" id="zipcode" name="zipcode" value="{{this.zipcode}}">
+
+    <label for="logo">Add a logo</label>
+    <input type="file" name="logo" id="logo">
+
+    <button type="submit">Update label</button>
+</form>

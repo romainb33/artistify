@@ -1,0 +1,14 @@
+<h1>Update style</h1>
+
+<form method="post" action="/dashboard/style/{{this._id}}/update" class="form" enctype="multipart/form-data">
+    <label class="labels" for="color">color</label>
+    <input class="input" type="color" id="color" name="color" value="{{this.color}}">
+
+    <label class="labels" for="name">name</label>
+    <input class="input" type="text" id="name" name="name" value="{{this.name}}">
+
+    <label class="labels" for="wikiURL">wiki</label>
+    <input class="input" type="text" id="wikiURL" name="wikiURL" value="{{this.wikiURL}}">
+
+    <button type="submit">Update style</button>
+</form>

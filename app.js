@@ -27,14 +27,14 @@ app.use(express.static(path.join(__dirname, "public")));
 // connect routers
 const indexRouter = require("./routes/index");
 const artistsRouter = require("./routes/artists");
-// require label router here
-// require style router here
+const labelsRouter = require("./routes/labels");
+const stylesRouter = require("./routes/styles");
 
 // use routers
 app.use("/", indexRouter); // use routers
-app.use("/dashboard/artist", artistsRouter); // use artits router
-// use label router here
-// use style router here
+app.use("/dashboard/artist", artistsRouter); // use artist router
+app.use("/dashboard/label", labelsRouter);
+app.use("/dashboard/style", stylesRouter);
 
 
 // catch 404 and forward to error handler

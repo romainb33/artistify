@@ -37,4 +37,14 @@ router.post("/create", upload.single("picture"), (req, res, next) => {
   .catch((err) => next(err));
 });
 
+/* GET update form */
+router.get("/update", upload.single("picture"), (req, res, next) => {
+  
+});
+
+router.post("/update", upload.single("picture"), (req, res, next) => {
+  
+});
+
+
 module.exports = router;
