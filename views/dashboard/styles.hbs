@@ -1,0 +1,22 @@
+<h1>All styles</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Color</th>
+            <th>Name</th>
+            <th>Wiki</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+         {{#each styles}}
+         <tr>
+             <td><i type = "color" value = {{this.color}}></i></td>
+             <td>{{this.name}}</td>
+             <td><i class="fas fa-link"></i></td>
+             <td><i class="fas fa-pencil-alt"></i></td>
+             <td><i class="fas fa-trash-alt"></i></td>
+         </tr> 
+        {{/each}}
+    </tbody>
