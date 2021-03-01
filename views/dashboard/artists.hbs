@@ -1,0 +1,26 @@
+<h1>All our artists</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Picture</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Band</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each artists}}
+        <tr>
+            <td><img src={{this.picture}}></td>
+            <td>{{this.name}}</td>
+            <td>{{this.description}}</td>
+            <td>{{this.isBand}}</td>
+            <td><i class="fas fa-pencil-alt"></i></td>
+            <td><i class="fas fa-trash-alt"></i></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

@@ -1,0 +1,17 @@
+<h1>Create an artist file</h1>
+
+<form method="post" action="/dashboard/artist/create" class="form" enctype="multipart/form-data">
+    <label class="labels" for="name">Name</label>
+    <input class="input" type="text" id="name" name="name">
+
+    <label class="labels" for="isBand">Is it a band ?</label>
+    <input class="input" type="checkbox" id="isBand" name="isBand">
+
+    <label class="labels" for="description">Description</label>
+    <input class="input" type="text" id="description" name="description">
+
+    <label for="picture">Add an image</label>
+    <input type="file" name="picture">
+
+    <button type="submit">Create artist</button>
+</form>
